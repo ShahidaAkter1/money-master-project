@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Project</title>
+    <!-- daisy UI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+   
+</head>
+<body>
+    <div class="flex justify-center mt-12">
+        <h1 class="font-bold text-7xl text-rose-500">Money Master </h1>
+        <img class=" w-40 h-20 ml-2 " src="images/money1.avif" alt="">
+    </div>
+    <section class="flex flex-col md:flex-row lg:flex-row mx-16 my-20">
+        <div class="pic ">
+            <img class="w-full md:w-[90%]" src="images/money-bundle.jpg" alt="">
+        </div>
+        <div class="calculation w-[40%]  mx-28">
+            <h1 class="text-center font-bold font-bold text-5xl mb-4 ">Income</h1>
+            <h1 class="ml-20">Income:  <input id="input-income" type="text" placeholder="0" class="input input-bordered input-sm my-8"/></h1>
+
+            <h1 class="text-center font-bold font-bold text-5xl mb-8">Expense</h1>
+            <div class="ml-20">
+             <h1>Food:  <input id="input-food" type="text" placeholder="0" class="input input-bordered input-sm my-2" /></h1>
+            <h1>Rent:  <input id="input-rent" type="text" placeholder="0" class="input input-bordered input-sm my-2" /></h1>
+            <h1>Clothes:  <input id="input-cloth" type="text" placeholder="0" class="input input-bordered input-sm my-2" /></h1>
+            <button id="btn-calculator" class="btn  bg-orange-500 my-4">calculator</button>
+            </div>
+
+           
+
+            <h1 class="text-center font-bold font-bold text-3xl my-4 ">Total Expenses:<span id="total-expence">00</span> </h1>
+            <h1 class="text-center font-bold font-bold text-3xl my-4 ">Balance:<span id="balance">00</span></h1>
+            <div class="px-2 md:px-12 text-center space-y-4 py-4">
+                <div
+                  class="grid grid-cols-[auto_auto_auto_auto] justify-items-end items-center gap-x-1"
+                >
+                  <div class="font-semibold">Save :</div>
+                  <div>
+                    <input
+                      class="bg-[#DCDCDC] p-2 w-full rounded-sm"
+                      type="text" placeholder="00"
+                      name="save"
+                      id="input-save"
+                    />
+                  </div>
+                  <div>%</div>
+                  <div>
+                    <button
+                      id="btn_save"
+                      class="bg-sky-500 hover:bg-sky-700 focus:bg-red-700 text-white px-4 py-2 w-full rounded-md">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+            
+            <h1 class="text-center font-bold font-bold text-3xl my-4 ">Saving Amount:<span id="saving-amount">00</span> </h1>
+            <h1 class="text-center font-bold font-bold text-3xl my-4 ">Remaining Balance:<span id="remaining-balance">00</span></h1>
+          
+        </div>
+    </section>
+  
+   
+
+    <!-- script file -->
+    <script src="js/money.js"></script>
+</body>
+</html>
